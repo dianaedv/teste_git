@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik",sans-serif;
+}
+body{
+    background-color: #f5f8ff;
+}
+.container{
+    background-color: #ffffff;
+    width: 60%;
+    min-width: 450px;
+    
+    margin-top: 10px;
+    position: relative;
+    padding: 50px 50px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.05);
+    border-radius: 7px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container{
+    width: 50%;
+    margin: 0 auto 30px auto;
+}
+.image-container img{
+    display: block;
+    position: relative;
+    max-width: 100%;
+    max-height: 400px;
+    margin: auto;
+}
+figcaption{
+    margin: 20px 0 30px 0;
+    text-align: center;
+    color: #2a292a;
+}
+input[type="file"]{
+    display: none;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+
+}
+
+.btn-group button {
+    background-color: rgb(164, 211, 212); /* Green background */
+    border: 1px solid rgb(136, 233, 225); /* Green border */
+    border-radius: 7px;
+    color: white; /* White text */
+    margin-top: auto;
+    margin-left: 5px;
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    position: sticky;
+    top: 20px;
+  }
+  
+.btn-group button:focus{
+    background-color: rgb(136, 233, 225);
+}
+
+.btn-group button:not(:last-child) {
+border-right: none; /* Prevent double borders */
+}
+  
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+content: "";
+clear: both;
+display: table;
+}
+  
+/* Add a background color on hover */
+.btn-group button:hover {
+background-color: rgba(161, 238, 232, 0.911);;
+}
+
+.disabled {
+    background-color: rgba(0,0,0,0.5); /* Green background */
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none; 
+  }
+
+.description {  
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    position: relative;
+    padding: 10px 10px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.05);
+    border-radius: 7px;
+
+}
+
+#container {
+    display: none;
+}
+
+#ptorax {
+    display:none;
+    
+  }
+
+#rtorax {
+    display:none;
+  }
+
+
+.tooltip {
+position: relative;
+display: inline-block;
+border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 120px;
+background-color: #555;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+bottom: 125%;
+left: 50%;
+margin-left: -60px;
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+opacity: 1;
+}
